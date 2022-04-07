@@ -11,7 +11,7 @@ function Orders() {
   const loadOrders = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/api/v1/orders/list-orders"
+        "https://fashionkart-ecommerce.herokuapp.com/api/v1/orders/list-orders"
       );
 
       const { data } = response.data;

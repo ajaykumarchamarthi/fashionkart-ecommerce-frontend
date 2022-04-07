@@ -34,7 +34,7 @@ function PasswordReset() {
     const token = params.token;
 
     fetch(
-      `https://pacific-mesa-21424.herokuapp.com/api/v1/users/resetPassword/${token}`,
+      `https://fashionkart-ecommerce.herokuapp.com/api/v1/users/resetPassword/${token}`,
       {
         method: "PATCH",
         body: JSON.stringify({ password, passwordConfirm }),

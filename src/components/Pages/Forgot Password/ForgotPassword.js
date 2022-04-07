@@ -22,7 +22,7 @@ function ForgotPassword() {
     event.preventDefault();
     const email = data.email;
     fetch(
-      "https://pacific-mesa-21424.herokuapp.com/api/v1/users/forgotPassword",
+      "https://fashionkart-ecommerce.herokuapp.com/api/v1/users/forgotPassword",
       {
         method: "POST",
         body: JSON.stringify({ email }),

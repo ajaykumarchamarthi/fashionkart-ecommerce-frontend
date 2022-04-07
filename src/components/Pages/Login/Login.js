@@ -30,7 +30,7 @@ function Login() {
     const email = data.email;
     const password = data.password;
 
-    fetch("http://localhost:4000/api/v1/users/login", {
+    fetch("https://fashionkart-ecommerce.herokuapp.com/api/v1/users/login", {
       method: "POST",
       body: JSON.stringify({ email, password }),
       headers: {

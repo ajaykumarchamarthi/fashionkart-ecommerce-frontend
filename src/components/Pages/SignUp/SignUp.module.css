@@ -109,6 +109,18 @@ a {
   }
 }
 
+@media (max-width: 676px) {
+  .container {
+    max-width: 35rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 25rem;
+  }
+}
+
 @media (max-width: 400px) {
   .container {
     max-width: 20rem;

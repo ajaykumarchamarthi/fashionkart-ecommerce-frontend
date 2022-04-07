@@ -37,7 +37,7 @@ function SignUp() {
     const password = data.password;
     const passwordConfirm = data.confirmPassword;
 
-    fetch("https://pacific-mesa-21424.herokuapp.com/api/v1/users/signup", {
+    fetch("https://fashionkart-ecommerce.herokuapp.com/api/v1/users/signup", {
       method: "POST",
       body: JSON.stringify({ name, email, password, passwordConfirm }),
       headers: {

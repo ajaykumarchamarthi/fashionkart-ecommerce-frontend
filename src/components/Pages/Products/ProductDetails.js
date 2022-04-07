@@ -17,7 +17,7 @@ function ProductDetails() {
   useEffect(() => {
     const loadProducts = async () => {
       const response = await axios.get(
-        "https://pacific-mesa-21424.herokuapp.com/api/v1/products"
+        "https://fashionkart-ecommerce.herokuapp.com/api/v1/products"
       );
       const { data } = response.data;
       setProducts(data.products);

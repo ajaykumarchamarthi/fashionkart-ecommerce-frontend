@@ -49,7 +49,7 @@ const Cart = (props) => {
     script.onload = async () => {
       try {
         const result = await axios.post(
-          "http://localhost:4000/api/v1/orders/create-order",
+          "https://fashionkart-ecommerce.herokuapp.com/api/v1/orders/create-order",
           {
             amount: cartCtx.totalAmount + "00",
           }
@@ -59,7 +59,7 @@ const Cart = (props) => {
         const {
           data: { key: razorpayKey },
         } = await axios.get(
-          "http://localhost:4000/api/v1/orders/get-razorpay-key"
+          "https://fashionkart-ecommerce.herokuapp.com/api/v1/orders/get-razorpay-key"
         );
 
         const options = {
@@ -71,7 +71,7 @@ const Cart = (props) => {
           order_id: order_id,
           handler: async function (response) {
             const result = await axios.post(
-              "http://localhost:4000/api/v1/orders/pay-order",
+              "https://fashionkart-ecommerce.herokuapp.com/api/v1/orders/pay-order",
               {
                 amount: amount,
                 razorpayPaymentId: response.razorpay_payment_id,
