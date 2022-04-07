@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.image {
+  width: 30px;
+  height: 30px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 6px;
+  color: white;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 920px) {
+  .wrapper {
+    margin-left: 0;
+  }
+
+  .image {
+    width: 28px;
+    height: 28px;
+  }
+
+  .name {
+    font-size: 1.1rem;
+  }
+}

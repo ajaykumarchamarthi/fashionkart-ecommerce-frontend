@@ -1,0 +1,23 @@
+.container {
+  margin-top: 5em;
+  min-width: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 2em 2em;
+  justify-items: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1276px) {
+  .container {
+    grid-template-columns: repeat(2, auto);
+    min-width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 844px) {
+  .container {
+    grid-template-columns: repeat(1, auto);
+    min-width: 100vw;
+  }
+}

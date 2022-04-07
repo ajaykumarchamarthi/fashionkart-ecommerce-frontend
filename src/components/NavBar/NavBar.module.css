@@ -1,0 +1,114 @@
+.NavBar {
+  background: #1877f2;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.Navigation {
+  margin: 0 auto;
+  margin-top: 0.7rem;
+}
+
+.NavBar nav ul {
+  list-style: none;
+}
+
+.NavBar nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.NavBar nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.NavBar nav ul li a.active {
+  border-bottom: 3px solid white;
+}
+
+.NavBar a:hover {
+  border-bottom: 3px solid white;
+}
+
+.NavBar .MobileNavigation {
+  display: none;
+}
+
+.btn {
+  padding: 0.4em 1em;
+  background: #083f86;
+  border-radius: 1em;
+  margin-left: 0.25em;
+  border: none;
+  width: 7em;
+}
+
+.btn span {
+  color: white;
+}
+
+.btn:hover {
+  background-color: #f0f3f5;
+}
+
+.btn:hover span {
+  color: #083f86;
+}
+
+@media (max-width: 920px) {
+  .NavBar {
+    padding: 0 1em;
+  }
+
+  .NavBar .Navigation {
+    display: none;
+  }
+
+  .NavBar .MobileNavigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .NavBar .MobileNavigation .HamburgerMenu {
+    position: absolute;
+    right: 4%;
+    cursor: pointer;
+  }
+
+  .NavBar nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: #1877f2;
+    opacity: 0.9;
+    border-top: 1px solid #4275bcdf;
+  }
+
+  .NavBar nav ul li {
+    text-align: center;
+  }
+
+  .NavBar {
+    opacity: 1;
+  }
+
+  .NavBar a:hover {
+    border-bottom: none;
+    border-bottom: 1px solid white;
+  }
+
+  .btn {
+    margin: 0 auto 2em;
+  }
+}

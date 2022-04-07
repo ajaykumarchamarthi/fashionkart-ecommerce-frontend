@@ -1,0 +1,23 @@
+.orders {
+  margin-top: 5em;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 1em auto;
+}
+
+.orderslist {
+  background-color: #fdfdfd;
+  border: 1px solid rgb(148, 144, 144);
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1020px) {
+  .orderslist {
+    width: 97%;
+  }
+}
