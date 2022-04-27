@@ -37,21 +37,21 @@ function ProductDetails() {
                 <Carousel.Item className={classes.carouselItem}>
                   <img
                     className="w-100"
-                    src={product.images}
+                    src={product.images[0]}
                     alt="First slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="w-100"
-                    src={product.images}
+                    src={product.images[1]}
                     alt="Second slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="w-100"
-                    src={product.images}
+                    src={product.images[2]}
                     alt="Third slide"
                   />
                 </Carousel.Item>

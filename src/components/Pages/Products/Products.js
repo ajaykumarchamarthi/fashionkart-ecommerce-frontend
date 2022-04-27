@@ -24,6 +24,8 @@ function Products() {
     loadProducts();
   }, []);
 
+  console.log(products);
+
   let productsData;
 
   if (products.length > 0) {

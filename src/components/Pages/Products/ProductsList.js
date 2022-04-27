@@ -10,7 +10,8 @@ function ProductsList({ id, images, name, brand, price }) {
         className={classes.container}
         onClick={() => history.push("/products/" + id)}
       >
-        <img src={images} alt="Product images" />
+        <img src={images[0]} alt="Product images" />
+
         <div className={classes.card}>
           <h5 className={classes.brand}>{brand}</h5>
           <p className={classes.name}>{name}</p>
