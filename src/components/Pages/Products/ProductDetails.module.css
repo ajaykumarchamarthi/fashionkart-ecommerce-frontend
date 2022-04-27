@@ -3,7 +3,7 @@
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  padding-top: 7em;
+  padding-top: 6em;
 }
 
 .container {
@@ -18,17 +18,19 @@
 
 .carousel {
   width: 350px;
-  height: 490px;
+  height: 485px;
   padding: 0 0.125em;
 }
 
-img {
+.carouselItem img {
   height: 100%;
+  padding: 0.5em;
   object-fit: cover;
   object-position: center;
 }
 
 .imagesContainer {
+  height: 500px;
   -webkit-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.18);
   box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.18);
@@ -48,7 +50,7 @@ img {
   width: 50%;
   border: none;
   padding: 0.7em 1.5em;
-  margin: 1.5em auto;
+  margin: 2em auto 0;
   border-radius: 8px;
 }
 

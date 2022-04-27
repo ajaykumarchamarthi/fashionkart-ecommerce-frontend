@@ -62,6 +62,9 @@ function Login() {
 
   return (
     <div className={classes.container}>
+      <p className={classes.testCredentials}>
+        Test Credentials: ajayaj0302@gmail.com & ajay1234
+      </p>
       <div className={classes.title}>
         <h3>Login</h3>
       </div>

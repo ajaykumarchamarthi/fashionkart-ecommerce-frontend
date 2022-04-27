@@ -14,7 +14,6 @@ function Order({ order }) {
       {order.orderedItems.map((item) => (
         <h6 className={classes.name} key={item._id}>
           {item.name} <span className={classes.qty}>QTY - {item.amount}</span>
-          {/* <span>Price - {item.price}</span> */}
         </h6>
       ))}
       <div className={classes.total}>

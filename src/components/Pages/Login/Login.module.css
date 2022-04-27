@@ -13,6 +13,12 @@
   border-radius: 0.5em;
 }
 
+.testCredentials {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
 form {
   max-width: 30rem;
   margin: 2rem auto;
