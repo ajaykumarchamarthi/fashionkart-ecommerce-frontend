@@ -1,7 +1,6 @@
 import React, { useState, useContext, Suspense } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import Products from "./components/Pages/Products/Products";
 import SignUp from "./components/Pages/SignUp/SignUp";
 import Login from "./components/Pages/Login/Login";
 import Orders from "./components/Pages/Orders/Orders";
@@ -15,6 +14,9 @@ import AuthContext from "./store/auth-context";
 import LoadingSpinner from "./UI/LoadingSpinner";
 import classes from "./App.module.css";
 
+const Products = React.lazy(() =>
+  import("./components/Pages/Products/Products")
+);
 const Men = React.lazy(() => import("./components/Pages/Men/Men"));
 const Women = React.lazy(() => import("./components/Pages/Women/Women"));
 const Accessories = React.lazy(() =>

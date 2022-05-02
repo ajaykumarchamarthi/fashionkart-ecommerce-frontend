@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ProductsList from "./ProductsList";
-// import ErrorModal from "../../../UI/ErrorModal";
+
 import classes from "./Products.module.css";
 
 function Products() {
   const [products, setProducts] = useState([]);
-  // const [error, setError] = useState();
-
-  // const errorHandler = () => {
-  //   setError(false);
-  // };
 
   useEffect(() => {
     const loadProducts = async () => {
@@ -23,8 +18,6 @@ function Products() {
 
     loadProducts();
   }, []);
-
-  console.log(products);
 
   let productsData;
 
@@ -44,13 +37,6 @@ function Products() {
 
   return (
     <>
-      {/* {error && (
-        <ErrorModal
-          title="Error Occured!"
-          message="ErrorOccured"
-          onConfirm={errorHandler}
-        />
-      )} */}
       <div className={classes.container}>{productsData}</div>
     </>
   );
