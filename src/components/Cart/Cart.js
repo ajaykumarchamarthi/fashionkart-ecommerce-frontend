@@ -20,7 +20,6 @@ const Cart = (props) => {
   const hasItems = cartCtx.items.length > 0;
 
   const authCtx = useContext(AuthContext);
-  const isClickable = authCtx.isLoggedIn ? false : true;
 
   const cartItemAddHandler = (item) => {
     cartCtx.addItem({ ...item, amount: 1 });
@@ -128,14 +127,12 @@ const Cart = (props) => {
       <button className={classes["button--alt"]} onClick={props.onCloseCart}>
         Close
       </button>
-      {hasItems && (
-        <button
-          className={classes.button}
-          onClick={orderHandler}
-          disabled={isClickable}
-        >
+      {hasItems && authCtx.isLoggedIn ? (
+        <button className={classes.button} onClick={orderHandler}>
           Order
         </button>
+      ) : (
+        alert("Please Login")
       )}
     </div>
   );
