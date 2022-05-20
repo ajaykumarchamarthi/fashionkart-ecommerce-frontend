@@ -34,7 +34,7 @@ const Cart = (props) => {
   };
 
   const orderHandler = () => {
-    setIsCheckOut(true);
+    authCtx.isLoggedIn ? setIsCheckOut(true) : history.replace("/login");
   };
 
   const loadRazorPay = (customerAddress) => {
@@ -127,12 +127,10 @@ const Cart = (props) => {
       <button className={classes["button--alt"]} onClick={props.onCloseCart}>
         Close
       </button>
-      {hasItems && authCtx.isLoggedIn ? (
+      {hasItems && (
         <button className={classes.button} onClick={orderHandler}>
           Order
         </button>
-      ) : (
-        alert("Please Login")
       )}
     </div>
   );
